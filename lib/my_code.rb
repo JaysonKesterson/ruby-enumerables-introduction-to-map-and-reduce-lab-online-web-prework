@@ -64,27 +64,11 @@ end
 
 def reduce_to_all_true(source_array)
   i=0
-  n=0
-  new_array = []
   
   while i < source_array.length do
-    if source_array[i] != nil
-    new_array[i] = 1
-    i += 1
-    else
+   return false if source_array[i] == false
     i += 1
     end
-  end
-  
-  while n < source_array.length do
-    if new_array[n] != 1
-      return false
-      n += 1
-    else
-      n += 1
-      return true
-    end
-  end
   
 end
 
